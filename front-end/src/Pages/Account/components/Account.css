@@ -1,0 +1,8 @@
+.account-container{
+    height: 85vh;
+}
+.account-body{
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}

@@ -1,0 +1,11 @@
+.review{
+    overflow: hidden;
+    min-height: 150px;
+}
+hr.review-hr{
+    border: 2px solid var(--dark-color);
+
+}
+.review-custom-bg{
+     background: linear-gradient(to bottom, var(--light-color),rgb(219, 218, 243));
+}

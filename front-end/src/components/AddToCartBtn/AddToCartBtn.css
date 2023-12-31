@@ -1,0 +1,4 @@
+.add-btn:hover{
+background: var(--dark-color) !important;
+color: var(--light-color) !important;
+}

@@ -1,0 +1,8 @@
+.review-body{
+    background-color: #6b63ff28;
+}
+
+.review-body textarea{
+    width: 350px !important;
+    height: 10px !important;
+}

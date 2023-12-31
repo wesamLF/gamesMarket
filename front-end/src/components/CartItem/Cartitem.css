@@ -1,0 +1,22 @@
+
+.shopping-cart-modal-body{
+    border-bottom: 2px solid var(--dark-color);
+}
+.item-image-container {
+    min-width:30%;
+    height: 130px;
+}
+
+.item-image-container img {
+    width: 150px;
+    max-height: 100% !important;
+    object-fit: cover;
+}
+.delete-item-icon{
+    color: red;
+}
+.delete-item-icon:hover {
+    color: var(--dark-color);
+
+}
+
