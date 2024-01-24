@@ -1,7 +1,6 @@
 import { React, useContext, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import "./MarketBody.css"
-import Card from '../Card/Card'
+import ProductCard from '../ProductCard/ProductCard'
 import Pagination from '../Pagination/Pagination'
 import {  useFilterContext } from "../../context/FilterContext"
 import { uesPaginationContext } from '../../context/PaginationContext'
@@ -30,7 +29,7 @@ const MarketBody = () => {
         <div className=" is-flex is-flex-direction-column">
             <div className='columns is-mobile is-multiline is-variable p-1'>
                 {filteredProductsQuery.data.data.map(product => (
-                    <Card key={product.id} data={product.attributes} id={product.id} />
+                    <ProductCard key={product.id} data={product.attributes} id={product.id} />
                 ))}
 
             </div>

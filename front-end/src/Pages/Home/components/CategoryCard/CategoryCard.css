@@ -1,12 +1,13 @@
-.CategoryCard {
-    min-height: 230px;
+
+.card-image{
+    transition-duration: 0.5s;
+    opacity: 0.9;
     
 }
-.card-image{
-    transition-duration: 0.7s;
-    opacity: 0.6;
+.card-image figure img{
+    height: 180px;
+    object-fit: contain;
 }
-
 .category-card-desc{
     opacity: 0;
     position: absolute;

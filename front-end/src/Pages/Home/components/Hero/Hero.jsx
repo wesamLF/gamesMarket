@@ -1,6 +1,6 @@
 import React from 'react'
+import "./hero.css"
 import { Search } from "@material-ui/icons"
-import "./Hero.css"
 import { NavLink } from 'react-router-dom'
 import { motion } from "framer-motion"
 
@@ -9,42 +9,43 @@ const Hero = () => {
     return (
         <>
             <div className="circles"></div>
-            <div className={` container is-relative hero is-fullheight-with-navbar is-flex is-align-content-center is-justify-content-center is-flex-wrap-wrap`}>
-                <div className=' p-6'>
-                    <div className="columns is-multiline is-mobile m-0" >
-                        <div className="column is-6-desktop is-6-tablet is-12-mobile mb-6 is-flex is-align-content-center is-justify-content-center is-flex-direction-column">
-                            <div className="title py-5 is-size-1">
-                                review games now!
-                            </div>
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 1 }}
-                                className="subtitle">
-                                lurem luremluremluremluremlurem vluremlurem luremlurem luremluremluremlurem lurem
-                            </motion.div>
-                            <div className="dark--bg--color columns is-multiline is-mobile is-clipped	">
-                                <motion.div
-                                    initial={{ x: "-100" }}
-                                    animate={{ x: 0 }}
-                                    transition={{ duration: 1, type: "spring", stiffness: 100 }}
-                                    className="column ">
-                                    <NavLink to={"../market"} className="button is-fullwidth has-text-weight-bold has-text-white dark--text--color px-2">
-                                        <Search className='mr-2 ' />Explore
-                                    </NavLink>
-                                </motion.div>
-                            </div>
+            <section className="container hero is-relative  is-fullheight-with-navbar is-flex is-align-content-center is-justify-content-center is-flex-wrap-wrap">
 
+                <div className="columns is-multiline is-mobile m-0 px-2 pt-6" >
+                    <div className=" column is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center
+                     is-justify-content-center is-flex-direction-column mb-6">
+                        <div className="title  is-size-1 is-size-3-mobile pb-3 is-pb-0-mobile">
+                            review games now!
                         </div>
-                        <div className="column p-0 is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center is-justify-content-center">
-                            <figure className="image" style={{ height: "350px", zIndex: "10" }}>
-                                <img src="/assets/images/gaming.svg" />
-                            </figure>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            className="subtitle is-size-6-mobile">
+                            lurem luremluremluremlu remlurem vluremlurem luremlurem luremluremluremlurem lurem
+                        </motion.div>
+                        <div className="dark--bg--color columns is-multiline is-mobile is-clipped	">
+                            <motion.div
+                                initial={{ x: "-100" }}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 1, type: "spring", stiffness: 100 }}
+                                className="column ">
+                                <NavLink to={"../market"} className="button is-fullwidth has-text-weight-bold has-text-white dark--text--color px-2">
+                                    <Search className='mr-2 ' />Explore
+                                </NavLink>
+                            </motion.div>
                         </div>
+
+                    </div>
+                    <div className="column  is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center is-justify-content-center p-0">
+                        <figure className="image" style={{ height: "350px", zIndex: "10" }}>
+                            <img src="/assets/images/gaming.svg" />
+                        </figure>
                     </div>
                 </div>
 
-            </div>
+
+            </section>
         </>
 
     )

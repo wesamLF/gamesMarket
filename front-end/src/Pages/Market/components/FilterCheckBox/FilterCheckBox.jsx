@@ -11,9 +11,6 @@ const FilterCheckBox = ({ headerTitle, checkBoxItems, category, platform  }) => 
     const { setPaginationPage } = uesPaginationContext()
 
 
-
-    console.log("filer ren")
-
     const filterDropDownHandler = () => {
         open ? setOpen(false) : setOpen(true)
 

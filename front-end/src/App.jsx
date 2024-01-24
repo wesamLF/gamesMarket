@@ -3,7 +3,6 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import './App.css'
-import './Util/globalCssVariables.css'
 import 'react-toastify/dist/ReactToastify.css';
 import Nav from './components/Nav/Nav'
 import Home from './Pages/Home/components/Home'
@@ -37,8 +36,8 @@ function App() {
             <Nav />
             <Routes>
               <Route path='/home' element={<Home />} exact />
-              <Route path='/Product/:id?' element={<ProductPage />} />
               <Route path='/market' element={<Market />} />
+              <Route path='/Product/:id?' element={<ProductPage />} />
               <Route path='/aboutus' element={<AboutUs />} />
               <Route element={<PrivateRoutes />}>
                 <Route path='/account' element={<Account />} >
@@ -53,7 +52,7 @@ function App() {
               </Route>
             </Routes>
             <Footer />
-            <ReactQueryDevtools />
+            
           </CartContext>
         </UserContext>
       </QueryClientProvider>

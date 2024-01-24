@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Nav.css"
+import "./nav.css"
 import { NavLink } from "react-router-dom";
 import Cart from '../Cart/Cart';
 import RegisterBtns from '../RegisterBtns/RegisterBtns';
@@ -26,7 +26,7 @@ const Nav = () => {
                 </div>
                 <div id="navbarMenu" className={`navbar-menu  dark--bg--color ${isActive ? "is-active" : ""}`}>
                     <div className="navbar-end ">
-                        <NavLink to={"./home"} className="navbar-item light--text--color">
+                        <NavLink to={"./home"} className="navbar-item light--text--color ">
                             Home
                         </NavLink>
                         <NavLink to={"./market"} className="navbar-item light--text--color">

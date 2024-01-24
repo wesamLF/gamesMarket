@@ -1,12 +1,12 @@
 import React from 'react'
-import "./card.css"
+import "./productCard.css"
 import { NavLink } from "react-router-dom";
 import { useCartContext } from "../../../../context/CartContext";
 import AddToCartBtn from '../../../../components/AddToCartBtn/AddToCartBtn'
 import RemoveFromCartBtn from '../../../../components/RemoveFromCartBtn/RemoveFromCartBtn'
 import Rating from '../../../../components/Rating/Rating';
 
-const Card = ({ data, id }) => {
+const ProductCard = ({ data, id }) => {
 
     const { cart } = useCartContext()
     return (
@@ -43,4 +43,4 @@ const Card = ({ data, id }) => {
     )
 }
 
-export default Card
+export default ProductCard

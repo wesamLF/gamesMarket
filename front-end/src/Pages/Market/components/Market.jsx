@@ -9,7 +9,7 @@ const Market = () => {
     return (
         <PaginationContext>
             <FilterContext>
-                <div className=' container pt-6 mt-6 black--text--color'>
+                <div className=' container black--text--color pt-6 mt-6'>
                     <div className="columns is-mobile is-multiline is-variable m-0">
                         <div className="column is-2-desktop is-12-tablet is-12-mobile  ">
                             <FilterContainer />

@@ -16,7 +16,6 @@ export async function getMyReviews(key) {
                     'Authorization': `Bearer ${token}`
                 }
             })
-            console.log("ressss" , res)
 
         return res
 

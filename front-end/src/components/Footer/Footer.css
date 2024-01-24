@@ -1,13 +1,6 @@
-.spacer {
-    height: 450px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
-.wave {
-    background-image: url("/assets/svg/wave2.svg");
+footer{
+    height: 150px;
 }
 
 .social-icons{
@@ -27,3 +20,10 @@
     background: #00ACEE;
     
 }
+.top {
+    clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 55px),0 100%);
+  }
+  .bottom {
+    clip-path: polygon(0 55px,50% 0,100% 55px,100% 100%,0 100%);
+    margin-top: -46px;
+  }
