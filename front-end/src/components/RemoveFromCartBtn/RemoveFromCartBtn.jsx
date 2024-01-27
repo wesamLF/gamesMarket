@@ -1,10 +1,9 @@
 import React from 'react'
 import { useCartContext } from "../../context/CartContext";
-import "./RemoveFromCartBtn.css"
+import "./removeFromCartBtn.css"
 const RemoveFromCartBtn = ({id}) => {
 
     const { cart, setCart } = useCartContext()
-    console.log("remo render")
 
     const handleRemoveFromCart = () => {
         const newArray = cart.filter(item => item.id != id)

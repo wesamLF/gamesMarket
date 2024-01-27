@@ -7,7 +7,6 @@ import "./product.css"
 import Rating from '../../../../components/Rating/Rating';
 const Product = ({ data, id }) => {
     const { cart } = useCartContext()
-console.log("ttttt" , data)
     return (
         <div className="container pt-6">
             <div >
@@ -20,18 +19,18 @@ console.log("ttttt" , data)
                 </nav>
                 <div className="">
                     <div className="columns is-mobile is-multiline m-0">
-                        <div className="product-img column is-7-desktop is-5-tablet is-12-mobile p-5" >
-                            <img src={`http://localhost:1337${data.image.data.attributes.url}`} />
+                        <div className="product-img column  is-7-desktop is-5-tablet is-12-mobile  " >
+                            <img className='' src={`http://localhost:1337${data.image.data.attributes.url}`} alt='product image' />
 
                         </div>
-                        <div className="column is-5-desktop is-7-tablet is-12-mobile py-6 ">
+                        <div className="column is-5-desktop is-7-tablet is-12-mobile">
                             <h2 className="title">
                                 {data.title}
                             </h2>
-                            <Rating ratingArray={data.reviews.data}/>
-                            <p className="subtitle">{data.desc}
+                            <p className="subtitle is-size-6">{data.desc}
                             </p>
-                            <div className="categories my-4">
+                            <Rating ratingArray={data.reviews.data} />
+                            <div className="categories ">
                                 {data.categories.data.map((cat, i) =>
                                     <NavLink key={i} to={"../../market"} className=" is-primary px-2">
                                         {cat.attributes.name}
@@ -39,8 +38,8 @@ console.log("ttttt" , data)
 
                                 )}
                             </div>
-                            <div className=" is-flex  is-flex-direction-column mt-4">
-                                <h4 className='is-size-2 mr-3'>
+                            <div className=" is-flex  is-flex-direction-column">
+                                <h4 className='is-size-2 is-size-3-mobile'>
                                     ${data.price}
                                 </h4>
 

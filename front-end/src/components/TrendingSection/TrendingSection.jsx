@@ -13,26 +13,25 @@ const TrendingSection = () => {
         queryFn: getTrendingProducts,
         refetchOnWindowFocus: false
     })
-    if(trendingProducts.isLoading) return <Loader/>
-    if(trendingProducts.isError) return <ErrorMessage refetch={trendingProducts.refetch} message={"sorry something went wrong, we colud not retrieve trending products!"}/>
+    if (trendingProducts.isLoading) return <div className="hero is-large"><Loader /></div>
+    if (trendingProducts.isError) return <ErrorMessage refetch={trendingProducts.refetch} message={"sorry something went wrong, we colud not retrieve trending products!"} />
     if (trendingProducts.data.length != 4) return <h1 className=' has-text-danger'>no product found!</h1>
     return (
         <>
-           <div className='hero is-fullheight-with-navbar is-flex is-align-content-center is-justify-content-center is-flex-wrap-wrap'>
-                <div className="is-flex is-justify-content-space-between  is-align-items-center mb-1 px-6" style={{ color: "#6C63FF" }}>
+                <div className=" is-flex is-justify-content-space-between  is-align-items-center mb-1 px-6" style={{ color: "#6C63FF" }}>
                     <p className='is-size-3 '>Trending <Whatshot /></p>
-                    <NavLink to={"../../../market"}  className='is-size-5 is-clickable dark--text--color'>View All</NavLink>
+                    <NavLink to={"../../../market"} className=' is-size-5  is-clickable dark--text--color is-hidden-mobile'>View All</NavLink>
                 </div>
                 <div className="dark--bg--color p-5">
 
                     <div className="columns is-multiline is-mobile is-clipped">
-                        
+
                         {trendingProducts.data.map(product => (
                             <TrendingCard key={product.id} data={product.attributes} />
                         ))}
 
                     </div>
-                </div>
+               
 
             </div>
         </>

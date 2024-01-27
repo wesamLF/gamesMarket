@@ -15,14 +15,14 @@ const Hero = () => {
                     <div className=" column is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center
                      is-justify-content-center is-flex-direction-column mb-6">
                         <div className="title  is-size-1 is-size-3-mobile pb-3 is-pb-0-mobile">
-                            review games now!
+                        🎮 Explore, Discover, Play
                         </div>
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             className="subtitle is-size-6-mobile">
-                            lurem luremluremluremlu remlurem vluremlurem luremlurem luremluremluremlurem lurem
+                            Find your next gaming adventure in our vast collection of digital games. From heart-pounding action to immersive storytelling, we've got something for every gamer.
                         </motion.div>
                         <div className="dark--bg--color columns is-multiline is-mobile is-clipped	">
                             <motion.div
@@ -37,8 +37,8 @@ const Hero = () => {
                         </div>
 
                     </div>
-                    <div className="column  is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center is-justify-content-center p-0">
-                        <figure className="image" style={{ height: "350px", zIndex: "10" }}>
+                    <div className="column  is-6-desktop is-6-tablet is-12-mobile  is-flex is-align-content-center is-justify-content-center  p-0">
+                        <figure className="image">
                             <img src="/assets/images/gaming.svg" />
                         </figure>
                     </div>

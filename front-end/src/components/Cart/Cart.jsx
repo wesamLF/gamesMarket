@@ -1,11 +1,10 @@
 import React, {  useState } from 'react'
-import "./Cart.css"
+import "./cart.css"
 import CartItem from '../CartItem/CartItem'
 import { ShoppingCart } from "@material-ui/icons"
 import { useCartContext } from "../../context/CartContext";
 
 const Cart = () => {
-console.log("cart renderrrr")
     const [isOpen, setIsOpen] = useState(false)
     const { cart, setCart } = useCartContext()
     const calcTotalPrice = () => {
@@ -28,7 +27,7 @@ console.log("cart renderrrr")
                 <div className="modal-background" onClick={() => setIsOpen(!isOpen)}></div>
                 <div className="modal-card">
                     <header className="modal-card-head">
-                        <p className="modal-card-title">Modal title</p>
+                        <p className="modal-card-title">CART</p>
                         <button className="delete" aria-label="close" onClick={() => setIsOpen(!isOpen)}></button>
                     </header>
                     <section className="modal-card-body">
@@ -39,7 +38,7 @@ console.log("cart renderrrr")
                     </section>
                     <footer className="modal-card-foot is-flex is-justify-content-space-between">
                         <button className="button checkout-btn">Check Out </button>
-                        <span className='is-size-4'>Total Price : {calcTotalPrice()} $</span>
+                        <span className='is-size-4 is-size-5-tablet is-size-6-mobile'>Total Price : {calcTotalPrice()} $</span>
                     </footer>
                 </div>
             </div>

@@ -21,12 +21,12 @@ const MyReviews = () => {
   if (reviews.isError) return <>
     <ErrorMessage refetch={reviews.refetch} message={"oops! sothing went wrong, please refresh the page."} />
   </>
-  console.log("rev" , reviews)
   return (
     <>
-    {reviews.data.data.reverse().map((review)=>{
-      return <MyReview key={review.id} data={review}/>
-    })}
+
+      {reviews.data.data.reverse().map((review) => {
+        return <MyReview key={review.id} data={review} />
+      })}
     </>
   )
 }

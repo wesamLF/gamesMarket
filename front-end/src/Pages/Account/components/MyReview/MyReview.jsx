@@ -6,7 +6,7 @@ import { useUserContext } from '../../../../context/UserContext'
 import Rating from "../../../../components/Rating/Rating"
 const MyReview = ({ data }) => {
   const { userInfo } = useUserContext()
- 
+
   const reviewId = data.id
   const userName = data.users_permissions_user.username
   const userId = data.users_permissions_user.id
@@ -19,13 +19,13 @@ const MyReview = ({ data }) => {
 
   return (
     <>
-      <div className="review columns is-size-6 m-0 p-4 ">
+      <div className="columns is-size-6 m-0   ">
 
         <NavLink to={`../../product/${porductId}`} className="column myreview-body is-two-fifth 
                  is-flex is-justify-content-start is-align-items-start is-flex-direction-column ">
           <span className='is-size-5'>{porductName}</span>
           <span className='is-size-7'>{createdAt}</span>
-          <Rating ratingNumber={rating}/>
+          <Rating ratingNumber={rating} />
 
         </NavLink>
 
@@ -34,11 +34,11 @@ const MyReview = ({ data }) => {
           {desc}
         </div>
         <div className="column is-one-fifth is-flex is-justify-content-center is-align-items-start"
-       >
-                <DeleteReview userId={userId} reviewId={reviewId} token={userInfo.token}/>
+        >
+          <DeleteReview userId={userId} reviewId={reviewId} token={userInfo.token} />
         </div>
       </div>
-      <hr className='review-hr' />
+      <hr className='review-hr ' />
 
     </>
   )

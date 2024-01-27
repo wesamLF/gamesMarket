@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import './App.css'
+import './app.css'
 import 'react-toastify/dist/ReactToastify.css';
 import Nav from './components/Nav/Nav'
 import Home from './Pages/Home/components/Home'
@@ -19,6 +19,7 @@ import Account from './Pages/Account/components/Account'
 import PrivateRoutes from './Util/PrivateRoutes'
 import MyReviews from './Pages/Account/components/MyReviews/MyReviews'
 import AboutUs from './Pages/AboutUs/components/AboutUs'
+import Error404Page from './Pages/Error404/Error404Page'
 
 function App() {
   const clientQuery = new QueryClient()
@@ -50,6 +51,8 @@ function App() {
                 <Route path='login' element={<Login />} />
                 <Route path='signin' element={<Signin />} />
               </Route>
+              <Route path='*' element={<Error404Page/>} />
+
             </Routes>
             <Footer />
             

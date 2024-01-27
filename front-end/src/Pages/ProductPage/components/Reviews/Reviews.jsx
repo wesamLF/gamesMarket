@@ -1,19 +1,20 @@
 import React from 'react'
-import "./reviews.css"
 import Review from '../Review/Review'
 import AddReview from '../AddReview/AddReview'
 const Reviews = ({ data }) => {
     return (
-        <div className='reviews-sections mt-6'>
-            <div className="container px-6 ">
-                <div className="columns is-justify-content-space-between is-align-items-start is-relative">
-                    <span className='column is-size-3 dark--text--color'>Rviews</span>
-                    <div className="column">
+        <div className='reviews-sections my-6 ' >
+            <div className="container  ">
+                <div className="columns m-0 is-relative ">
+                    <span className='column is-half is-size-3 dark--text--color 
+                    is-flex is-justify-content-center is-align-items-center'>Rviews</span>
+                    <div className="column is-half is-size-3  has-backgroundd-link
+                    is-flex is-justify-content-center is-align-items-center">
                         <AddReview />
                     </div>
                 </div>
                 {data.map((d, i) => {
-                    return <Review key={i}data={d} />
+                    return <Review key={i} data={d} />
                 })}
 
 

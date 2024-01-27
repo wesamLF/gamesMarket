@@ -1,9 +1,8 @@
 import React from 'react'
 import { useCartContext } from "../../context/CartContext";
 import { AddShoppingCart } from "@material-ui/icons"
-import "./AddToCartBtn.css"
+import "./addToCartBtn.css"
 const AddToCartBtn = ({data , id}) => {
-    console.log("addd render" , data)
 
     const { cart, setCart } = useCartContext()
 
@@ -18,7 +17,7 @@ const AddToCartBtn = ({data , id}) => {
         setCart(newArray)
     }
     return (
-        <div className="add-btn is-clickable dark--text--color is-flex is-justify-content-center is-align-items-center py-2" onClick={handleAddToCart} >
+        <div className="add-btn is-clickable dark--bg--color light--text--color is-flex is-justify-content-center is-align-items-center py-2" onClick={handleAddToCart} >
             <AddShoppingCart className='' />
         </div >
     )

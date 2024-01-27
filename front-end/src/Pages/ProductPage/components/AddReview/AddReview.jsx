@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./AddReview.css"
+import "./addReview.css"
 import { DeleteForever } from "@material-ui/icons"
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { postReview } from "../../Api/postReview";
@@ -53,10 +53,10 @@ const AddReview = () => {
         }
     }
     return (
-        <div className={`columns m-0 ${isClose ? "" : "review-body"}`}>
+        <div className={`columns m-0 ${isClose ? "" : "add-review-form"}`}>
             <form
                 onSubmit={handleSubmit}
-                className={`column px-6 py-2 ${isClose ? "is-hidden" : ""}`}>
+                className={`column  py-2 ${isClose ? "is-hidden" : ""}`}>
                 <textarea
                     className="textarea is-link"
                     placeholder="Link textarea"
@@ -88,7 +88,7 @@ const AddReview = () => {
                 }
 
             </form>
-            <div className=" column has-text-right">
+            <div className=" column has-text-right is-one-fifth ">
                 <button className={`button button dark--bg--color light--text--color ${isClose ? "" : "is-rounded p-2"}`}
                     onClick={() => handleAddReviewBtn()}>
                     {isClose ? "Add Review" : <DeleteForever className='' />}

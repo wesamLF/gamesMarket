@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Review.css"
+import "./review.css"
 import DeleteReview from '../../../../components/deleteReview/DeleteReview'
 import { useUserContext } from '../../../../context/UserContext'
 import Rating from '../../../../components/Rating/Rating'
@@ -17,7 +17,7 @@ const Review = ({ data }) => {
     return (
         <>
             <hr className='review-hr' />
-            <div className={`review columns is-size-6 m-0 p-4 ${checkIfReviewOwner()&& "review-custom-bg"}`} >
+            <div className={`review-body columns is-size-6 m-0 p-4 ${checkIfReviewOwner()&& "review-custom-bg "}`} >
                 <div className="column is-one-fifth 
                  is-flex is-justify-content-start is-align-items-start is-flex-direction-column">
                     <span>{data.attributes.users_permissions_user.data.attributes.username}</span>

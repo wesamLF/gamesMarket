@@ -7,7 +7,7 @@ const AboutUsCard = ({ title, animationTime, children }) => {
             initial={{ x: 150 }}
             animate={{ x: 0 }}
             transition={{ duration: animationTime, type: "spring" }}
-            className="column is-half">
+            className="column is-half is-clickable">
             <div className="card">
                 <header className="card-header">
                     <p className="card-header-title">

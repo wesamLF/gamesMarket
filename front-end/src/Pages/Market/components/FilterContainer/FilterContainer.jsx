@@ -13,7 +13,7 @@ const FilterContainer = () => {
             <FilterCheckBox category={catgory} platform={platform}
                 headerTitle={"platform"} checkBoxItems={["ps5", "ps4", "xbox1", "steam"]} />
             <FilterCheckBox category={catgory} platform={platform}
-                headerTitle={"category"} checkBoxItems={["horror", "action", "racing", "sport", "cardGame"]} />
+                headerTitle={"category"} checkBoxItems={["horror", "adventure", "racing", "FPS", "card game"]} />
         </div>
     )
 }

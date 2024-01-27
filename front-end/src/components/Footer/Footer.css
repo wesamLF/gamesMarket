@@ -1,6 +1,8 @@
 
-footer{
+footer.bottom{
+    margin-top: 150px;
     height: 150px;
+    /* margin-top: 50px; */
 }
 
 .social-icons{
@@ -24,6 +26,6 @@ footer{
     clip-path: polygon(0 0,100% 0,100% 100%,50% calc(100% - 55px),0 100%);
   }
   .bottom {
+
     clip-path: polygon(0 55px,50% 0,100% 55px,100% 100%,0 100%);
-    margin-top: -46px;
   }

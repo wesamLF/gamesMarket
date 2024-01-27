@@ -1,8 +1,10 @@
+
 .account-container{
-    height: 85vh;
+    border: 1px solid var(--dark-color);
 }
+
+
 .account-body{
-    height: 100%;
-    overflow: scroll;
-    overflow-x: hidden;
+    height: 85vh;
+    overflow-x: auto;
 }

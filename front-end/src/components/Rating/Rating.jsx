@@ -3,16 +3,15 @@ import { AddShoppingCart, Star, StarOutline } from "@material-ui/icons"
 import "./rating.css"
 
 const Rating = ({ ratingArray, ratingNumber }) => {
-
-
-    // in case we want to send a number to this component "<Review/>"
+    console.log(ratingArray)
+    // rating for component account/myreview
     if (ratingNumber) return <>
-        <div className='rating-star is-flex is-align-items-center'>
+        <div className=' is-flex is-align-items-center'>
             {[...Array(5)].map((s, i) => {
                 const curr = i + 1
                 return (
                     <span key={i}>
-                        {curr <= ratingNumber ? <Star className='' /> : <StarOutline className='' />}
+                        {curr <= ratingNumber ? <Star className='is-size-6' /> : <StarOutline className='is-size-6' />}
                     </span>
                 )
             })}
@@ -22,15 +21,17 @@ const Rating = ({ ratingArray, ratingNumber }) => {
     // in case no one rated the product
     if (ratingArray?.length == 0 || !ratingArray) return <>
         <div className='rating-star is-flex is-align-items-center'>
-            <StarOutline className='' />
-            <StarOutline className='' />
-            <StarOutline className='' />
-            <StarOutline className='' />
-            <StarOutline className='' />
-            <span className='is-size-7'> (0)</span>
-        </div>
+            
+            <StarOutline className='is-size-6' />
+            <StarOutline className='is-size-6' />
+            <StarOutline className='is-size-6' />
+            <StarOutline className='is-size-6' />
+            <StarOutline className='is-size-6' />
+            <span className='is-size-6 '> (0)</span>
 
+        </div>
     </>
+
 
 
     // clac the reviews rating then divide it by the total number of reviews
@@ -40,16 +41,16 @@ const Rating = ({ ratingArray, ratingNumber }) => {
     const stars = totalStars / ratingArray.length
 
     return (
-        <div className='rating-star is-flex is-align-items-center'>
+        <div className='rating-star is-flex is-align-items-center '>
             {[...Array(5)].map((s, i) => {
                 const curr = i + 1
                 return (
-                    <span key={i}>
-                        {curr <= stars ? <Star className='' /> : <StarOutline className='' />}
-                    </span>
+                    <div className='' key={i}>
+                        {curr <= stars ? <Star className='is-size-6' /> : <StarOutline className='is-size-6' />}
+                    </div>
                 )
             })}
-            <span className='is-size-7'> ({ratingArray?.length})</span>
+            <span className='is-size-7 '> ({ratingArray?.length})</span>
         </div>
 
 
