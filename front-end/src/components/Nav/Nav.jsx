@@ -12,12 +12,11 @@ const Nav = () => {
     }
 
     return (
-        <nav className="navbar dark--bg--color " role="navigation" aria-label="main navigation">
+        <nav className="navbar  dark--bg--color p-2" role="navigation" aria-label="main navigation ">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-                    </a>
+                        <img src="../assets/images/WeeGames2.png" style={{height:"50px", width:"150px"}} />
+                    
                     <a onClick={navHandler} role="button" className={`navbar-burger light--text--color ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -26,13 +25,13 @@ const Nav = () => {
                 </div>
                 <div id="navbarMenu" className={`navbar-menu  dark--bg--color ${isActive ? "is-active" : ""}`}>
                     <div className="navbar-end ">
-                        <NavLink to={"./home"} className="navbar-item light--text--color ">
+                        <NavLink to={"./home"} className="navbar-item light--text--color ms-1 ">
                             Home
                         </NavLink>
-                        <NavLink to={"./market"} className="navbar-item light--text--color">
+                        <NavLink to={"./market"} className="navbar-item light--text--color ms-1">
                             Market
                         </NavLink>
-                        <NavLink to={"./aboutus"} className="navbar-item light--text--color">
+                        <NavLink to={"./aboutus"} className="navbar-item light--text--color ms-1">
                             About us
                         </NavLink>
                     </div>

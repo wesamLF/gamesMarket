@@ -6,7 +6,8 @@
     color: var(--dark-color) !important;
 }
 .active{
-    background-color: var(--light-color) !important;
+    
+     background-color: var(--light-color) !important;
     color: var(--dark-color) !important;
-    pointer-events: none;
+    pointer-events: none; 
 }

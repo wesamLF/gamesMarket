@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
+import './app.css'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import './app.css'
 import 'react-toastify/dist/ReactToastify.css';
 import Nav from './components/Nav/Nav'
 import Home from './Pages/Home/components/Home'

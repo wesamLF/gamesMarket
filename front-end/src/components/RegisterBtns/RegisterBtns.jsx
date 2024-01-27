@@ -1,8 +1,8 @@
 import React from 'react'
+import "./registerBtns.css"
 import { useUserContext } from "../../context/UserContext";
 import { NavLink } from "react-router-dom";
 import UserIcon from '../UserIcon/UserIcon';
-import "./registerBtns.css"
 const RegisterBtns = () => {
     const { userInfo } = useUserContext()
     

@@ -4,7 +4,7 @@ import ProductCard from '../ProductCard/ProductCard'
 import Pagination from '../Pagination/Pagination'
 import { useFilterContext } from "../../context/FilterContext"
 import { uesPaginationContext } from '../../context/PaginationContext'
-import { getFilteredProducts } from "../../Api/getProductsQueries"
+import { getFilteredProducts } from "../../Api/getFilteredProducts"
 import Loader from '../../../../Util/Loader/Loader'
 import ErrorMessage from '../../../../Util/errorMessage'
 

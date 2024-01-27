@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AccountCircle, KeyboardArrowUp } from "@material-ui/icons"
-import './UserIcon.css'
+import './userIcon.css'
 import { NavLink } from 'react-router-dom'
 import LogOut from '../LogOut/LogOut'
 const UserIcon = () => {

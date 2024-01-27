@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 
-export async function getOneProduct(key) {
+export async function getProductData(key) {
 
         const id = key.queryKey[1].id
 

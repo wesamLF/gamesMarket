@@ -6,9 +6,10 @@
 
 .keyboard-arrow-up{
     position: absolute;
-    font-size: 15px;
-    bottom: -8px;
-    right: -8px;    
+   
+    font-size: 15px !important;
+    bottom: -4px;
+    right: -4px;    
 }
 
 .is-active-style .keyboard-arrow-up{

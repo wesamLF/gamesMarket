@@ -3,7 +3,6 @@ import { AddShoppingCart, Star, StarOutline } from "@material-ui/icons"
 import "./rating.css"
 
 const Rating = ({ ratingArray, ratingNumber }) => {
-    console.log(ratingArray)
     // rating for component account/myreview
     if (ratingNumber) return <>
         <div className=' is-flex is-align-items-center'>

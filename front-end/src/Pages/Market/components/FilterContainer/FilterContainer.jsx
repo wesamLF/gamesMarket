@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "./FilterContainer.css"
 import FilterCheckBox from '../FilterCheckBox/FilterCheckBox'
-import SearchBar from '../../../../components/SearchBar/SearchBar'
+import SearchBar from '../SearchBar/SearchBar'
 
 const FilterContainer = () => {
     const catgory = useRef([])

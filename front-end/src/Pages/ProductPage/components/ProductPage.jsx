@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
-import "./ProductPage.css"
+import "./productPage.css"
 import Product from './Product/Product'
 import ErrorMessage from '../../../Util/errorMessage';
 import Reviews from './Reviews/Reviews'
-import { getOneProduct } from '../Api/getOneProduct'
+import { getProductData } from '../Api/getProductData'
 import Loader from '../../../Util/Loader/Loader'
 import TrendingSection from '../../../components/TrendingSection/TrendingSection'
 
@@ -13,7 +13,7 @@ const ProductPage = () => {
     const id = useParams("id")
     const product = useQuery({
         queryKey: ["product" , id],
-        queryFn: getOneProduct,
+        queryFn: getProductData,
         refetchOnWindowFocus: false
     })
     // custom container becuase the parent of this component is the root!
