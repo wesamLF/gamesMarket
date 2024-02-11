@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios"
 const useFetchHook =(filter)=>{
-    const url = "http://localhost:1337/api"
+    const url = `${import.meta.env.VITE_BASE_URL}/api`
     const [data , setData]= useState("")
     const [loading , setLoading]= useState(true)
     const [error , setError]= useState(false)

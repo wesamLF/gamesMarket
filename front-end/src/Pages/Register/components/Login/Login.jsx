@@ -56,7 +56,7 @@ const Login = () => {
 
   return (
     <>
-      <form className='px-4 py-5' onSubmit={handleSubmit}>
+      <form className='px-4 py-6 my-5' onSubmit={handleSubmit}>
         {mutation.isError && handleError()}
 
         <div className="field ">

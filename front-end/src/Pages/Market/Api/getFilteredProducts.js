@@ -3,7 +3,6 @@ import axios from "axios"
 
 
 export async function getFilteredProducts(key) {
-        
 
                 let newUrl = "";
                 if (key?.queryKey[1].category.length != 0 || key?.queryKey[1].platform.length != 0 || key?.queryKey[1].searchTerm != "") {
@@ -14,11 +13,11 @@ export async function getFilteredProducts(key) {
                         const searchTerm = `&filters[title][$startsWith]=${key?.queryKey[1]?.searchTerm}`
                         const filteredCategory = category ? category.join("") : ""
                         const filteredPlatform = platform ? platform.join("") : ""
-                        newUrl = `http://localhost:1337/api/products?populate=*${filteredCategory}${filteredPlatform}&${searchTerm}&${currentPage}`
+                        newUrl = `${import.meta.env.VITE_BASE_URL}/api/products?populate=*${filteredCategory}${filteredPlatform}&${searchTerm}&${currentPage}`
 
                 } else {
                         const currentPage = `pagination[page]=${key?.queryKey[2]}&pagination[pageSize]=8`
-                        newUrl = `http://localhost:1337/api/products?populate=*&${currentPage}`
+                        newUrl = `${import.meta.env.VITE_BASE_URL}/api/products?populate=*&${currentPage}`
 
 
                 }
