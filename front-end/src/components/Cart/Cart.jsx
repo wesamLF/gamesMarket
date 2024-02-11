@@ -37,7 +37,7 @@ const Cart = () => {
 
                     </section>
                     <footer className="modal-card-foot is-flex is-justify-content-space-between">
-                        <button className="button checkout-btn">Check Out </button>
+                        <button className="button checkout-btn" disabled>Check Out </button>
                         <span className='is-size-4 is-size-5-tablet is-size-6-mobile'>Total Price : {calcTotalPrice()} $</span>
                     </footer>
                 </div>

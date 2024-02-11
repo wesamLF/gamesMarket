@@ -16,6 +16,8 @@ const Footer = () => {
                         <WhatsApp className='whats social-icons' />
                         <Instagram className='insta social-icons' />
                         <Twitter className='twitter social-icons' />
+                        
+                        
                     </div>
                     <p className='mt-3'>copyright © 2023 all rights reserved</p>
                 

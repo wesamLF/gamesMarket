@@ -14,8 +14,8 @@ const Login = () => {
   const navigate = useNavigate()
   const { setUserInfo } = useUserContext()
   const [logInData, setLogInData] = useState({
-    identifier: "",
-    password: ""
+    identifier: "test99@gmail.com",
+    password: "wesamlafi"
   })
   const mutation = useMutation({
     mutationFn: postLogIn,
@@ -49,16 +49,28 @@ const Login = () => {
   }
   const handleError = () => {
     const tempMessage = mutation?.error?.response?.data?.error?.message
-    if (tempMessage) return <ErrorMessage message={tempMessage}  />
-    else return <ErrorMessage message={"oops! somthing went wrong in the server please try again."}  />
+    if (tempMessage) return <ErrorMessage message={tempMessage} />
+    else return <ErrorMessage message={"oops! somthing went wrong in the server please try again."} />
   }
 
 
   return (
     <>
-      <form className='px-4 py-6 my-5' onSubmit={handleSubmit}>
+      <form className='px-4 py-5 my-5' onSubmit={handleSubmit}>
         {mutation.isError && handleError()}
+        <div className="">
+          <article className="message is-small">
+            <div className="message-header">
+              <p>Test Account</p>
+              
+            </div>
+            <div className="message-body">
+              <h4>Email: test99@gmail.com</h4>
+              <h4>Password: wesamlafi</h4>
 
+            </div>
+          </article>
+        </div>
         <div className="field ">
           <label htmlFor="" className="" >Email</label>
           <div className="control has-icons-left">
