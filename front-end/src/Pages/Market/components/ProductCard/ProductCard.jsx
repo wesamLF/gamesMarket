@@ -17,7 +17,7 @@ const ProductCard = ({ data, id }) => {
                     <div className="card is-clickable ">
                         <NavLink to={`/product/${id}`} className="card is-clickable main-card">
                             <figure className="image is-256x256">
-                                <img src={`http://localhost:1337${data.image.data.attributes.url}`} />
+                                <img src={`${data.image.data.attributes.url}`} />
                             </figure>
                             <div className="p-2" >
                                 <div className="m-0 ">

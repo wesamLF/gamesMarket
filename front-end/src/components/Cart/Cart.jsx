@@ -12,9 +12,7 @@ const Cart = () => {
         return prices.reduce((accum, curr) => {
             const temp = accum + curr
             return ((Math.trunc(temp * 100) / 100))
-
         }, 0)
-
     }
     return (
         <>

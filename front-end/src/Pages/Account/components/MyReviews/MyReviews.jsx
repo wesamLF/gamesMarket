@@ -23,7 +23,7 @@ const MyReviews = () => {
   </>
   return (
     <>
-
+     {reviews.data.data.length == 0 && <h1>Empty!</h1>}
       {reviews.data.data.reverse().map((review) => {
         return <MyReview key={review.id} data={review} />
       })}

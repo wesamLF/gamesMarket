@@ -11,7 +11,7 @@ const AddToCartBtn = ({data , id}) => {
             id: id,
             title: data.title,
             price: data.price,
-            img:`http://localhost:1337${data.image.data.attributes.url}`
+            img:`${data.image.data.attributes.url}`
         } ]
         localStorage.setItem("cart", JSON.stringify(newArray))
         setCart(newArray)

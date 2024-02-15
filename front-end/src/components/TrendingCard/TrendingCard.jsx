@@ -13,7 +13,7 @@ const TrendingCard = ({ data }) => {
             <div className="card is-clickable trending-main-card ">
 
                 <figure className="image trending-img">
-                    <img className='' src={`http://localhost:1337${data.image.data.attributes.url}`} alt='trending product image'/>
+                    <img className='' src={`${data.image.data.attributes.url}`} alt='trending product image'/>
                 </figure>
                 <NavLink to={"../../market"} className="p-2 main--text--color">
                     <div className="m-0">

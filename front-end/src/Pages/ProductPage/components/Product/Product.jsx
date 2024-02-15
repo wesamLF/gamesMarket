@@ -20,7 +20,7 @@ const Product = ({ data, id }) => {
                 <div className="">
                     <div className="columns is-mobile is-multiline m-0">
                         <div className="product-img column  is-7-desktop is-5-tablet is-12-mobile  " >
-                            <img className='' src={`http://localhost:1337${data.image.data.attributes.url}`} alt='product image' />
+                            <img className='' src={`${data.image.data.attributes.url}`} alt='product image' />
 
                         </div>
                         <div className="column is-5-desktop is-7-tablet is-12-mobile">

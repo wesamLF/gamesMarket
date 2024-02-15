@@ -23,9 +23,10 @@ const MyReview = ({ data }) => {
 
         <NavLink to={`../../product/${porductId}`} className="column myreview-body is-two-fifth 
                  is-flex is-justify-content-start is-align-items-start is-flex-direction-column ">
-          <span className='is-size-5'>{porductName}</span>
-          <span className='is-size-7'>{createdAt}</span>
-          <Rating ratingNumber={rating} />
+          <p className='is-size-5'>{porductName}</p>
+          <p className='is-size-7'>{createdAt}</p>
+            <Rating ratingNumber={rating} />
+          
 
         </NavLink>
 

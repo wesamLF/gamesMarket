@@ -1,7 +1,7 @@
 .myreview-body{
     color: #4a4a4a;
 }
-.myreview-body:hover span:not(:last-child){
+.myreview-body:hover  {
     color: var(--dark-color);
 }
 .myreview-delete-item-icon{

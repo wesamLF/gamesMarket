@@ -5,13 +5,12 @@ export const postLogIn = async ({ identifier, password }) => {
 
 
 
-    const newUrl = `http://localhost:1337/api/auth/local`
+    const newUrl = `${import.meta.env.VITE_BASE_URL}/api/auth/local`
     const res = await axios.post(newUrl, {
         identifier: identifier,
         password: password
     })
 
-    console.log("res ------", res)
 
     return res
 

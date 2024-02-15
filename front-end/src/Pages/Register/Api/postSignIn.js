@@ -2,7 +2,7 @@
 import axios from "axios"
 
 export const postSignIn = async ({ username, password, email }) => {
-    const newUrl = `http://localhost:1337/api/auth/local/register`
+    const newUrl = `${import.meta.env.VITE_BASE_URL}/api/auth/local/register`
 
     const res = await axios.post(newUrl , {
         username:username,

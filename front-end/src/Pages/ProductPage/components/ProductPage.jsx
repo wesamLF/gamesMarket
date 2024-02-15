@@ -16,6 +16,8 @@ const ProductPage = () => {
         queryFn: getProductData,
         refetchOnWindowFocus: false
     })
+    console.log("reviews",product.data)
+
     // custom container becuase the parent of this component is the root!
     if (product.isLoading) return <>
         <div className="product-page-container is-flex is-justify-content-center is-align-items-center">
@@ -27,6 +29,7 @@ const ProductPage = () => {
             <ErrorMessage refetch={product.refetch} message={"oops! sothing went wrong, please refresh the page."} />
         </div>
     </>
+
     return (
         <>
 
