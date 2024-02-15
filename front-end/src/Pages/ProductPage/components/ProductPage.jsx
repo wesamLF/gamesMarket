@@ -16,7 +16,6 @@ const ProductPage = () => {
         queryFn: getProductData,
         refetchOnWindowFocus: false
     })
-    console.log("reviews",product.data)
 
     // custom container becuase the parent of this component is the root!
     if (product.isLoading) return <>
