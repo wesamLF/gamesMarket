@@ -13,7 +13,7 @@ const Nav = () => {
     }
 
     return (
-        <nav className="navbar  dark--bg--color p-2" role="navigation" aria-label="main navigation ">
+        <nav className="navbar  is-mobile  dark--bg--color p-2" role="navigation" aria-label="main navigation ">
             <div className="container">
                 <div className="navbar-brand">
                     <img src="../assets/images/WeeGames2.png" style={{ height: "50px", width: "150px" }} />
@@ -38,15 +38,22 @@ const Nav = () => {
                     </div>
 
                     <div className="navbar-end ">
-                        <div className="navbar-item is-flex is-justify-content-space-between ">
-                            <a href="https://github.com/wesamLF/wee-reviews" target="_blank"
-                             className='is-flex is-justify-content-center px-2'>
+                        <div className="columns m-0 navbar-item ">
+                            <div className="column  is-flex is-justify-content-center ">
+                                <a href="https://github.com/wesamLF/wee-reviews" target="_blank"
+                                    className=' is-flex is-justify-content-center is-align-content-center pr-5 '>
+                                    <GitHub className='has-text-white ' />
+                                </a>
+                                <div className=" is-flex is-justify-content-center is-align-content-center  ">
 
-                            <GitHub className='has-text-white	'/>
-                            </a>
-                            <Cart />
-                            <RegisterBtns />
-                            
+                                    <Cart />
+                                </div>
+                            </div>
+                            <div className="column is-flex is-justify-content-space-between">
+
+                                <RegisterBtns />
+                            </div>
+
                         </div>
                     </div>
                 </div>

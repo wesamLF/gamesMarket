@@ -16,7 +16,7 @@ const Cart = () => {
     }
     return (
         <>
-            <div className='cart-icon px-3 mr-3 is-flex is-justify-content-center is-align-items-center is-clickable'>
+            <div className='cart-icon is-flex is-justify-content-center is-align-items-center is-clickable'>
                 <ShoppingCart onClick={() => setIsOpen(!isOpen)} />
                 {cart.length === 0 ? "" : <div className='cart-counter'>{cart.length} </div>}
             </div>

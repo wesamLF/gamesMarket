@@ -9,9 +9,11 @@
   --outlined-color: rgb(28, 9, 155);
 
 }
-hr{
+
+hr {
   margin: 0px !important;
 }
+
 .main--bg--color {
   background-color: var(--light-color) !important;
 }
