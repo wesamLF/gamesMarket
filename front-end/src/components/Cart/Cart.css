@@ -16,8 +16,8 @@
     font-size: 12px;
     background-color: red ;
     color: white;
-    top: 0;
-    right: 0;
+    top: -5px;
+    right: -5px;
     display: flex;
     justify-content: center;
     align-items: center;
