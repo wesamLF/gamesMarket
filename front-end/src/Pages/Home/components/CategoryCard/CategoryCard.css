@@ -5,7 +5,7 @@
     
 }
 .card-image figure img{
-    min-height: 200px;
+    height: 200px;
     object-fit: contain;
 }
 .category-card-desc{

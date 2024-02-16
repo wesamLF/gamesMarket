@@ -20,7 +20,7 @@ const CategoryCard = ({ CategoryName, desc, imgSrc }) => {
                             {CategoryName}
                         </p>
                     </header>
-                    <div className="card-image">
+                    <div className="card-image ">
                         <figure className="image">
                             <img src={imgSrc} />
                         </figure>

@@ -39,7 +39,7 @@ const Nav = () => {
 
                     <div className="navbar-end ">
                         <div className="navbar-item is-flex is-justify-content-space-between ">
-                            <a href="https://github.com/wesamLF/gamesReviews-frontEnd" target="_blank"
+                            <a href="https://github.com/wesamLF/wee-reviews" target="_blank"
                              className='is-flex is-justify-content-center px-2'>
 
                             <GitHub className='has-text-white	'/>
