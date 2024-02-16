@@ -39,7 +39,7 @@ const Nav = () => {
 
                     <div className="navbar-end ">
                         <div className="columns m-0 navbar-item ">
-                            <div className="column  is-flex is-justify-content-center ">
+                            <div className="column  m-0 pr-5  is-flex is-justify-content-center ">
                                 <a href="https://github.com/wesamLF/wee-reviews" target="_blank"
                                     className=' is-flex is-justify-content-center is-align-content-center pr-5 '>
                                     <GitHub className='has-text-white ' />
@@ -49,7 +49,7 @@ const Nav = () => {
                                     <Cart />
                                 </div>
                             </div>
-                            <div className="column is-flex is-justify-content-space-between">
+                            <div className="column p-0 m-0 ">
 
                                 <RegisterBtns />
                             </div>
